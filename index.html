@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Organize o resultado fictício de uma pequena disputa em um pódio, destacando a posição de uma pessoa escolhida.">
+    <title>
+      Pódio da Comunidade
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js">
+    </script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        PROJETO
+        <span>
+          ·
+        </span>
+        Pódio
+      </a>
+      <span class="selo">
+        DEMONSTRAÇÃO LOCAL
+      </span>
+    </header>
+    <main>
+      <section class="abertura">
+        <p class="sobretitulo">
+          ESTUDO INTERATIVO · JAVASCRIPT
+        </p>
+        <h1>
+          Pódio da Comunidade
+        </h1>
+        <p class="introducao">
+          Organize o resultado fictício de uma pequena disputa em um pódio, destacando a posição de uma pessoa escolhida.
+        </p>
+      </section>
+      <section class="painel">
+        <form id="formulario">
+          <div class="grade">
+            <div class="campo">
+              <label for="um">
+                Participante
+              </label>
+              <input id="um" value="Lia" required>
+            </div>
+            <div class="campo">
+              <label for="dois">
+                Participante
+              </label>
+              <input id="dois" value="Caio" required>
+            </div>
+            <div class="campo">
+              <label for="tres">
+                Participante
+              </label>
+              <input id="tres" value="Noa" required>
+            </div>
+            <div class="campo">
+              <label for="destaque">
+                Pessoa em destaque
+              </label>
+              <input id="destaque" value="Noa" required>
+            </div>
+          </div>
+          <div class="acoes">
+            <button>
+              Montar pódio
+            </button>
+          </div>
+        </form>
+        <div id="resultado" class="grade" aria-live="polite">
+        </div>
+      </section>
+    </main>
+    <footer>
+      Projeto demonstrativo independente · dados fictícios · sem serviços externos
+    </footer>
+  </body>
+</html>
+
